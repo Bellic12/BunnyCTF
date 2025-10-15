@@ -16,6 +16,7 @@ import promise from 'eslint-plugin-promise'
 import node from 'eslint-plugin-node'
 import unicorn from 'eslint-plugin-unicorn'
 import perfectionist from 'eslint-plugin-perfectionist'
+import { parserOptions } from 'eslint-plugin-node/lib/configs/recommended-module'
 
 export default defineConfig([
   globalIgnores(['dist']),
@@ -24,13 +25,17 @@ export default defineConfig([
     
     extends: [
       js.configs.recommended,
-      tseslint.configs.recommended,
+      tseslint.configs.recommendedTypeChecked,
       reactHooks.configs['recommended-latest'],
       reactRefresh.configs.vite,
       prettierConfig,
     ],
     
     languageOptions: {
+      parserOptions: {
+        project: ['./tsconfig.node.json', './tsconfig.app.json'],
+        tsconfigRootDir: import.meta.dirname,
+      },
       ecmaVersion: 2020,
       globals: globals.browser,
     },
