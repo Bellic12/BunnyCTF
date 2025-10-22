@@ -16,7 +16,6 @@ import promise from 'eslint-plugin-promise'
 import node from 'eslint-plugin-node'
 import unicorn from 'eslint-plugin-unicorn'
 import perfectionist from 'eslint-plugin-perfectionist'
-import { parserOptions } from 'eslint-plugin-node/lib/configs/recommended-module'
 
 export default defineConfig([
   globalIgnores(['dist']),
