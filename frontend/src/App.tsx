@@ -1,26 +1,17 @@
-import { Routes, Route, Link } from 'react-router-dom'
-
-function Home() {
-  return <h1>Home Page</h1>
-}
-
-function About() {
-  return <h1>About Page</h1>
-}
-
-function App() {
+export default function App() {
   return (
-    <>
-      <nav>
-        <Link to="/">Home</Link>
-        <Link to="/about">About</Link>
-      </nav>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-      </Routes>
-    </>
-  )
+    <div className="min-h-screen flex items-center justify-center bg-base-200">
+      <div className="card w-96 bg-base-100 shadow-xl">
+        <div className="card-body items-center text-center">
+          <h1 className="card-title text-4xl font-bold">RabbitCTF</h1>
+          <p className="text-base-content/70">
+            Capture The Flag platform
+          </p>
+          <div className="card-actions justify-end mt-4">
+            <button className="btn btn-primary">Get Started</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 }
-
-export default App
