@@ -1,4 +1,4 @@
-# BunnyCTF - Backend
+# RabbitCTF - Backend
 
 A modern CTF (Capture The Flag) platform backend built with FastAPI, PostgreSQL, and Clean Architecture principles.
 

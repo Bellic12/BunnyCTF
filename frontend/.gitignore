@@ -1,24 +1,18 @@
+# Node dependencies and build output
+node_modules/
+dist/
+
+# Local environment files (Vite supports .env* for local config)
+.env*
+# If you keep a sample, you may commit .env.example (uncomment to allow)
+# !.env.example
+
 # Logs
-logs
-*.log
 npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
 pnpm-debug.log*
-lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
-*.local
-
-# Editor directories and files
-.vscode/*
-!.vscode/extensions.json
-.idea
+# Editor/OS cruft
+.vscode/
+.idea/
 .DS_Store
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
+Thumbs.db

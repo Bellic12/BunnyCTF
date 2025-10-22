@@ -1,6 +1,6 @@
-# BunnyCTF
+# RabbitCTF
 
-BunnyCTF is a web platform for managing and participating in Capture The Flag (CTF) competitions. It allows administrators to create and manage challenges, while participants can register, join teams, solve challenges, and track their progress in real time.
+RabbitCTF is a web platform for managing and participating in Capture The Flag (CTF) competitions. It allows administrators to create and manage challenges, while participants can register, join teams, solve challenges, and track their progress in real time.
 
 ---
 
@@ -15,7 +15,7 @@ The project follows a modular layered architecture inspired by Clean Architectur
 
 ```
 
-BunnyCTF/
+RabbitCTF/
 ├── README.md                 → Project overview and documentation
 ├── docker-compose.yml        → Service orchestration for containers
 ├── .github/                  → Continuous Integration and workflow automation
